@@ -1,18 +1,25 @@
 .buttonDiv {
     display: flex;
     color: white;
-    font-size: 30px;
-    width: 100%;
+    font-size: 22px;
+    width: 65%;
+    margin: auto;
+    justify-content: space-between;
+    margin-top: 10px;
 }
 
 .backDiv {
-    float: left;
-    margin-left: 17.5%;
+    cursor: pointer;
 }
 
 .nextDiv {
-    margin-right: 17.5%;
-    position: relative;
-    align-content: right;
-    
+    cursor: pointer;
+}
+
+.deleteDiv {
+    background-color: #6cbbea;
+    font-size: 20px;
+    width: 100px;
+    border-radius: 50px;
+    cursor: pointer;
 }

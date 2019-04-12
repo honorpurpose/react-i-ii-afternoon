@@ -1,0 +1,18 @@
+.buttonDiv {
+    display: flex;
+    color: white;
+    font-size: 30px;
+    width: 100%;
+}
+
+.backDiv {
+    float: left;
+    margin-left: 17.5%;
+}
+
+.nextDiv {
+    margin-right: 17.5%;
+    position: relative;
+    align-content: right;
+    
+}

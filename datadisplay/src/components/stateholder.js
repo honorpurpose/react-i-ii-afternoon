@@ -122,7 +122,8 @@ class StateHolder extends Component {
             favoriteMovies: [this.state.movieOneInput, this.state.movieTwoInput, this.state.movieThreeInput],
         }} else {return data[i]}})
         this.setState({
-            data: newData
+            data: newData,
+            edit: false
         })
     }   
     
@@ -140,7 +141,9 @@ class StateHolder extends Component {
                 
             }]
         })
-        console.log(this.state.data.length)
+        this.setState({
+            addNew: false
+        })
     }
         
 
@@ -215,8 +218,10 @@ class StateHolder extends Component {
                     <div className='nextDiv' onClick={ this.handleNextClick }> { nextButton } </div>
                     
                 </div>
-                <div className='addDiv'>{ addNewData } </div>
+                <div className='inputs'>
+                <div>{ addNewData } </div>
                 <div>{ editData } </div>
+                </div>
                 
             </div>
             
